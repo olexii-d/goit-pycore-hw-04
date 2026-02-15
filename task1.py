@@ -28,5 +28,8 @@ def total_salary(path):
 
     average = total / count if count else 0
     return total, average
-total, average = total_salary("salary_file.txt")
-print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
+
+
+if __name__ == "__main__":
+    total, average = total_salary("salary_file.txt")
+    print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
